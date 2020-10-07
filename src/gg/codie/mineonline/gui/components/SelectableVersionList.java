@@ -46,7 +46,7 @@ public class SelectableVersionList extends GUIObject {
     public SelectableVersionList(String name, Vector3f localPosition, Vector3f rotation, Vector3f scale, IOnClickListener doubleClickListener) {
         super(name, localPosition, rotation, scale);
 
-        dropTarget.setComponent(DisplayManager.getCanvas());
+//        dropTarget.setComponent(DisplayManager.getCanvas());
 
         dropTargetAdapter = new DropTargetAdapter() {
             @Override

@@ -30,7 +30,7 @@ public class SkinPreviewMenuScreen implements IMenuScreen {
     public SkinPreviewMenuScreen() {
         PlayerGameObject.thePlayer.setPlayerAnimation(new WalkPlayerAnimation());
 
-        dropTarget.setComponent(DisplayManager.getCanvas());
+//        dropTarget.setComponent(DisplayManager.getCanvas());
 
         dropTargetAdapter = new DropTargetAdapter() {
             @Override

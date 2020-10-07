@@ -179,6 +179,14 @@ public class DisplayManager {
         Image img = Toolkit.getDefaultToolkit().getImage(DisplayManager.class.getResource("/img/favicon.png"));
         frame.setIconImage(img);
 
+        Graphics g = canvas.getGraphics();
+        if(g != null)
+        {
+            g.setColor(Color.BLACK);
+            g.fillRect(0, 0, DEFAULT_WIDTH, DEFAULT_HEIGHT);
+            g.dispose();
+        }
+
 //        frame.setSize(DisplayManager.getDefaultWidth() + frame.getInsets().left + frame.getInsets().right, DisplayManager.getDefaultHeight() + frame.getInsets().left + frame.getInsets().right);
 //        frame.pack();
 //        frame.setDefaultLookAndFeelDecorated(true)

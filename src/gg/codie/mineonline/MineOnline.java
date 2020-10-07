@@ -38,6 +38,8 @@ public class MineOnline {
         launchArgs.add(MenuManager.class.getCanonicalName());
         launchArgs.addAll(Arrays.asList(args));
 
+        System.out.println(Arrays.toString(launchArgs.toArray(new String[launchArgs.size()])));
+
         java.util.Properties props = System.getProperties();
         ProcessBuilder processBuilder = new ProcessBuilder(launchArgs);
 
